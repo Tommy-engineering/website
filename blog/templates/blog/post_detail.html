@@ -1,0 +1,14 @@
+{% extends 'account/base.html' %}
+{%block body%}
+<center>
+<h1>{{object.title}} <small>written by: </small><span>{{post.author}}</span></h1>
+<p class="subheading"> {{post.date_posted|date:'Y-m-d'}}</p>
+
+<ul class="aboutul">
+<li> <i class="fa fa-check"></i>{{post.content}}</li>
+</ul>
+<hr>
+<center>
+{%endblock body%}
+
+                
